@@ -51,7 +51,7 @@ onMounted(() => {
   height: 60px;
   position: fixed;
   right: -30px;
-  top: 2%;
+  top: 30%;
   transition: all 1s linear;
   animation: zhuan 8s infinite linear;
   z-index: 20;
