@@ -10,6 +10,11 @@ const router = createRouter({
 	history: createWebHashHistory(),
 	routes
 })
+
+router.beforeEach((to, from, next) => {
+	console.log(to);
+	next()
+})
 export default router
 
 // 作者： 躺平是终点

@@ -8,6 +8,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "echarts": "^5.3.2",
+    "lib-flexible": "^0.3.2",
+    "postcss-pxtorem": "^6.0.0",
     "sass": "^1.50.1",
     "vue": "^3.2.25",
     "vue-router": "4"
