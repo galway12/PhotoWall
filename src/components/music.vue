@@ -8,7 +8,10 @@
   />
   <audio ref="audio" controls :hidden="true">
     您的浏览器不支持 audio 标签。
-    <source src="@assets/music/Way_Back_Home.mp3" type="audio/mpeg" />
+    <source
+      src="http://sd.sycdn.kuwo.cn/4d24210e319a7ac978d07139bf31a522/625faa5c/resource/n1/16/9/2166088951.mp3"
+      type="audio/mpeg"
+    />
   </audio>
 </template>
 
