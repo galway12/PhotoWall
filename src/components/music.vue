@@ -22,7 +22,6 @@ const audio = ref(null);
 const imgDom = ref(null);
 const play = ref(false);
 const zt = () => {
-  console.log(play.value);
   if (play.value) {
     audio.value.pause();
     imgDom.value.style.animationPlayState = "paused";
@@ -49,9 +48,10 @@ onMounted(() => {
 .posi {
   width: 60px;
   height: 60px;
+  border-radius: 50%;
   position: fixed;
   right: -30px;
-  top: 30%;
+  top: 42%;
   transition: all 1s linear;
   animation: zhuan 8s infinite linear;
   z-index: 20;

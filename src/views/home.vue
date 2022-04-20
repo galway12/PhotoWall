@@ -1,16 +1,38 @@
 <template>
-  <com-music />
+  <!-- echarts -->
   <div id="line"></div>
+  <!-- <div class="swiper_box">
+    <com-swiper />
+  </div> -->
+
   <ul class="img_ul">
-    <li v-for="(item, i) in list.arr" :key="i">
-      <img :src="item" :key="i" />
+    <li v-for="(item, i) in list.arr" :key="i" @click="oPenBig(item)">
+      <!-- <img :src="item" alt="" /> -->
+      <van-image
+        lazy-load
+        fit="scale-down"
+        width="auto"
+        height="auto"
+        :src="item"
+        v-lazy="img"
+        alt="❤"
+      />
     </li>
   </ul>
+  <!-- 音乐控件 -->
+  <com-music />
 </template>
 
 <script setup>
 import * as echarts from "echarts";
+
+import { Image } from "vant";
+
 import comMusic from "@/components/music.vue";
+import comSwiper from "@/components/swiper.vue";
+
+import { ImagePreview } from "vant";
+
 const imgs = import.meta.globEager(`@/assets/img/*.*`);
 //引入所有图片
 import { onMounted, reactive } from "vue";
@@ -18,8 +40,9 @@ import { onMounted, reactive } from "vue";
 const list = reactive({
   arr: [],
 });
-const zt = () => {
-  console.log("000");
+
+const oPenBig = (item) => {
+  ImagePreview([item]);
 };
 
 const DrawLine = () => {
@@ -28,7 +51,7 @@ const DrawLine = () => {
   let option;
   option = {
     title: {
-      text: "孤帆远影碧空尽,唯见长江天际流",
+      //   text: "孤帆远影碧空尽,唯见长江天际流",
       textStyle: {
         color: "#555",
       },
@@ -521,7 +544,7 @@ onMounted(() => {
   //   画折线
   DrawLine();
   return {
-    zt,
+    oPenBig,
     list,
   };
 });
@@ -532,16 +555,22 @@ onMounted(() => {
   width: 100%;
   height: 200px;
 }
+.swiper_box {
+	  width: 100%;
+  height: 200px;
+}
 .img_ul {
-  display: flex;
-  flex-wrap: wrap;
+  column-count: 3;
+  column-count: 3;
+  column-gap: 0;
+  -moz-column-count: 3; /* Firefox */
+  -webkit-column-count: 3; /* Safari 和 Chrome */
+  -moz-column-gap: 0; /* Firefox */
+  -webkit-column-gap: 0; /* Safari 和 Chrome */
+  background: #ffffcc;
   > li {
-    width: 150px;
-    margin: auto;
-    > img {
-      width: 100%;
-      height: 100%;
-    }
+    column-gap: 0;
+    break-inside: avoid;
   }
 }
 </style>
