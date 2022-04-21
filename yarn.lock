@@ -200,12 +200,6 @@ debug@^4.3.2:
   dependencies:
     ms "2.1.2"
 
-dom7@^2.1.5:
-  version "2.1.5"
-  resolved "https://registry.yarnpkg.com/dom7/-/dom7-2.1.5.tgz#a79411017800b31d8400070cdaebbfc92c1f6377"
-  dependencies:
-    ssr-window "^2.0.0"
-
 dot-case@^3.0.4:
   version "3.0.4"
   resolved "https://registry.yarnpkg.com/dot-case/-/dot-case-3.0.4.tgz#9b2b670d00a431667a8a75ba29cd1b98809ce751"
@@ -551,20 +545,9 @@ sourcemap-codec@^1.4.8:
   version "1.4.8"
   resolved "https://registry.yarnpkg.com/sourcemap-codec/-/sourcemap-codec-1.4.8.tgz#ea804bd94857402e6992d05a38ef1ae35a9ab4c4"
 
-ssr-window@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/ssr-window/-/ssr-window-2.0.0.tgz#98c301aef99523317f8d69618f0010791096efc4"
-
 supports-preserve-symlinks-flag@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/supports-preserve-symlinks-flag/-/supports-preserve-symlinks-flag-1.0.0.tgz#6eda4bd344a3c94aea376d4cc31bc77311039e09"
-
-swiper@^5.4.5:
-  version "5.4.5"
-  resolved "https://registry.yarnpkg.com/swiper/-/swiper-5.4.5.tgz#a350f654bf68426dbb651793824925512d223c0f"
-  dependencies:
-    dom7 "^2.1.5"
-    ssr-window "^2.0.0"
 
 to-regex-range@^5.0.1:
   version "5.0.1"
@@ -626,15 +609,15 @@ vite@^2.9.2:
   optionalDependencies:
     fsevents "~2.3.2"
 
-vue-awesome-swiper@^5.4.5:
-  version "5.0.1"
-  resolved "https://registry.yarnpkg.com/vue-awesome-swiper/-/vue-awesome-swiper-5.0.1.tgz#ba0d20ec9ca4dff2b7b4e99592cf59308335dfcc"
-
 vue-router@4:
   version "4.0.14"
   resolved "https://registry.yarnpkg.com/vue-router/-/vue-router-4.0.14.tgz#ce2028c1c5c33e30c7287950c973f397fce1bd65"
   dependencies:
     "@vue/devtools-api" "^6.0.0"
+
+vue3-lazy@^1.0.0-alpha.1:
+  version "1.0.0-alpha.1"
+  resolved "https://registry.yarnpkg.com/vue3-lazy/-/vue3-lazy-1.0.0-alpha.1.tgz#326a56c2ade4430c76b7ac90d33a7fde0af9aaa6"
 
 vue@^3.2.25:
   version "3.2.33"

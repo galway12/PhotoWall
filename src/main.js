@@ -11,6 +11,7 @@ import router from "./router";
 const app = createApp(App)
 
 app.use(vant);
+
 app.use(router);
 
 app.mount('#app')
