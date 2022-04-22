@@ -1,1 +1,0 @@
-import{_ as e}from"./plugin-vue_export-helper.21dcd24c.js";import{h as r,b as a}from"./index.acad5452.js";const c={};function o(t,n){return a(),r("div",null,"day")}var f=e(c,[["render",o]]);export{f as default};
