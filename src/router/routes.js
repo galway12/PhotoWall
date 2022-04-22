@@ -2,6 +2,7 @@ const routes = [{
 	path: '/',
 	name: 'index',
 	title: 'home',
+	redirect:'/home',
 	component: () => import('@/views/tabPages/index.vue'), //.vue不能省略
 	meta: {
 		keepAlive: true
