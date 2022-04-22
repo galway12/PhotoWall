@@ -7,11 +7,15 @@ import './utils/flexible.js'
 
 import vant from "./vant";
 import router from "./router";
+// 完整加载
+import VueLuckyCanvas from '@lucky-canvas/vue'
 
 const app = createApp(App)
 
 app.use(vant);
 
 app.use(router);
+
+app.use(VueLuckyCanvas)
 
 app.mount('#app')

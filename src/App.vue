@@ -5,9 +5,14 @@ import HelloWorld from "./components/HelloWorld.vue";
 </script>
 
 <template>
-  <!--  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Hello Vue 3 + Vite" /> -->
-  <router-view></router-view>
+
+  <!-- <router-view></router-view> -->
+   <router-view v-slot="{ Component }">
+    <keep-alive>
+      <component :is="Component"  v-if="$route.meta.keepAlive"/>
+    </keep-alive>
+    <component :is="Component"  v-if="!$route.meta.keepAlive"/>
+  </router-view> 
 </template>
 
 <style>

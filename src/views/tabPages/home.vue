@@ -12,5 +12,7 @@ import comMusic from "@/components/music.vue";
 import comWaterfall from "@/components/waterfall.vue";
 import comLine from "@/components/echartsLine.vue";
 </script>
+<style lang="scss" scoped>
+</style>
 
 

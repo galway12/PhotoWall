@@ -6,6 +6,14 @@
   version "7.17.9"
   resolved "https://registry.yarnpkg.com/@babel/parser/-/parser-7.17.9.tgz#9c94189a6062f0291418ca021077983058e171ef"
 
+"@lucky-canvas/vue@^0.1.9":
+  version "0.1.9"
+  resolved "https://registry.yarnpkg.com/@lucky-canvas/vue/-/vue-0.1.9.tgz#4e584912bd7bee0c0572dd596c5fd15511cae260"
+  dependencies:
+    "@vue/composition-api" "^1.0.0"
+    lucky-canvas "^1.7.21"
+    vue-demi "^0.7.4"
+
 "@popperjs/core@^2.9.2":
   version "2.11.5"
   resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.11.5.tgz#db5a11bf66bdab39569719555b0f76e138d7bd64"
@@ -72,6 +80,10 @@
   dependencies:
     "@vue/compiler-dom" "3.2.33"
     "@vue/shared" "3.2.33"
+
+"@vue/composition-api@^1.0.0":
+  version "1.4.9"
+  resolved "https://registry.yarnpkg.com/@vue/composition-api/-/composition-api-1.4.9.tgz#6fa65284f545887b52d421f23b4fa1c41bc0ad4b"
 
 "@vue/devtools-api@^6.0.0":
   version "6.1.4"
@@ -420,6 +432,10 @@ lower-case@^2.0.2:
   dependencies:
     tslib "^2.0.3"
 
+lucky-canvas@^1.7.21:
+  version "1.7.22"
+  resolved "https://registry.yarnpkg.com/lucky-canvas/-/lucky-canvas-1.7.22.tgz#4ef5e9527a952e1ad82632b14e8114ae67943a01"
+
 magic-string@^0.25.7:
   version "0.25.9"
   resolved "https://registry.yarnpkg.com/magic-string/-/magic-string-0.25.9.tgz#de7f9faf91ef8a1c91d02c2e5314c8277dbcdd1c"
@@ -609,15 +625,15 @@ vite@^2.9.2:
   optionalDependencies:
     fsevents "~2.3.2"
 
+vue-demi@^0.7.4:
+  version "0.7.5"
+  resolved "https://registry.yarnpkg.com/vue-demi/-/vue-demi-0.7.5.tgz#88dee7492fc99a0f911ff03fc02c658fa2a79af8"
+
 vue-router@4:
   version "4.0.14"
   resolved "https://registry.yarnpkg.com/vue-router/-/vue-router-4.0.14.tgz#ce2028c1c5c33e30c7287950c973f397fce1bd65"
   dependencies:
     "@vue/devtools-api" "^6.0.0"
-
-vue3-lazy@^1.0.0-alpha.1:
-  version "1.0.0-alpha.1"
-  resolved "https://registry.yarnpkg.com/vue3-lazy/-/vue3-lazy-1.0.0-alpha.1.tgz#326a56c2ade4430c76b7ac90d33a7fde0af9aaa6"
 
 vue@^3.2.25:
   version "3.2.33"
