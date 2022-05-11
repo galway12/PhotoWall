@@ -1,0 +1,1 @@
+import{_ as r}from"./plugin-vue_export-helper.21dcd24c.js";import{b as t,h as a,F as s,l as o,e as n,m as _}from"./index.70ff0a7a.js";const c={},l={class:"about"};function i(u,m){return t(),a("div",l,[(t(),a(s,null,o(10,(d,e)=>n("div",{class:"coverImg",key:e,style:_({backgroundPositionY:`-${e*30}px`})},null,4)),64))])}var v=r(c,[["render",i]]);export{v as default};
