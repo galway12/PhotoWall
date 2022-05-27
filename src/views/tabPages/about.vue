@@ -18,7 +18,7 @@
     margin-top: 2px;
     height: 10%;
     width: 100%;
-    background: url("../../assets/img/22.jpg");
+    background: url("../../assets/img/11.png");
     background-size: cover;
     background-repeat: no-repeat;
   }

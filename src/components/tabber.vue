@@ -8,23 +8,23 @@
       <template #icon="props">
         <img :src="props.active ? icon1 : icon2" />
       </template>
-      hah
+      昂
     </van-tabbar-item>
     <van-tabbar-item name="about" to="/about" icon="search">
       <template #icon="props">
         <img :src="props.active ? icon3 : icon4" />
       </template>
-      hah标签</van-tabbar-item
+      克</van-tabbar-item
     >
     <van-tabbar-item name="day" to="/day" icon="friends-o">
       <template #icon="props">
         <img :src="props.active ? icon5 : icon6" /> </template
-      >标签</van-tabbar-item
+      >赛</van-tabbar-item
     >
     <van-tabbar-item name="me" to="/me" icon="setting-o">
       <template #icon="props">
         <img :src="props.active ? icon7 : icon8" /> </template
-      >标签</van-tabbar-item
+      >拉</van-tabbar-item
     >
   </van-tabbar>
 </template>

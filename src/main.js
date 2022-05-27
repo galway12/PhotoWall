@@ -11,8 +11,6 @@ import router from "./router";
 
 const app = createApp(App)
 
-// 轮播
-
 app.use(vant);
 
 app.use(router);
