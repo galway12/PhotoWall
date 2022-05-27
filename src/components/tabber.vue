@@ -19,12 +19,12 @@
     <van-tabbar-item name="day" to="/day" icon="friends-o">
       <template #icon="props">
         <img :src="props.active ? icon5 : icon6" /> </template
-      >赛</van-tabbar-item
+      >塞</van-tabbar-item
     >
     <van-tabbar-item name="me" to="/me" icon="setting-o">
       <template #icon="props">
         <img :src="props.active ? icon7 : icon8" /> </template
-      >拉</van-tabbar-item
+      >车</van-tabbar-item
     >
   </van-tabbar>
 </template>
