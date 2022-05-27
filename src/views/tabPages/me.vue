@@ -1,8 +1,7 @@
 <template>
   <div class="me_box">
     <div class="msg">{{ msg }}</div>
-    <van-button class="btn" :loading="isloading" color="rgb(94,97,109)" round size="small" type="primary"
-      @click="getMsg">
+    <van-button class="btn" :loading="isloading" color="rgb(94,97,109)" hairline round type="primary" @click="getMsg">
       换亿句
     </van-button>
   </div>
@@ -35,20 +34,25 @@ onMounted(() => {
 <style lang="scss" scoped>
 .me_box {
   width: 100%;
-  height: 100vh;
+  height: 96%;
   background-image: url(../../assets/img/zz.png);
   background-size: 100% 100%;
-  padding-top: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
 }
 
 .msg {
+  padding-bottom: 200px;
   font-size: 16px;
   color: rgb(238, 72, 102);
 }
 
 .btn {
   position: fixed;
-  left: 45%;
   bottom: 20%;
+  left: 50%;
+  transform: translate(-50%, 0);
 }
 </style>

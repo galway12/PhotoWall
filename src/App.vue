@@ -7,16 +7,17 @@ import HelloWorld from "./components/HelloWorld.vue";
 <template>
 
   <!-- <router-view></router-view> -->
-   <router-view v-slot="{ Component }">
+  <router-view v-slot="{ Component }">
     <keep-alive>
-      <component :is="Component"  v-if="$route.meta.keepAlive"/>
+      <component :is="Component" v-if="$route.meta.keepAlive" />
     </keep-alive>
-    <component :is="Component"  v-if="!$route.meta.keepAlive"/>
-  </router-view> 
+    <component :is="Component" v-if="!$route.meta.keepAlive" />
+  </router-view>
 </template>
 
 <style>
 #app {
+  height: 100vh;
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
