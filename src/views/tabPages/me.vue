@@ -14,21 +14,29 @@ import { getGs } from '@api/001.js'
 const msg = ref("");
 const isloading = ref(false);
 // 获取橘子
+
 const getMsg = () => {
+
   isloading.value = true
+
   getGs().then(res => {
+
     msg.value = res.data.hitokoto
+
     isloading.value = false
+
   }).catch(err => {
+
     console.log(err)
+
     Toast('慢点~')
+
     isloading.value = false
+
   })
+
 }
-onMounted(() => {
-  getMsg();
-  return { msg, getMsg, isloading }
-})
+getMsg();
 </script>
 
 <style lang="scss" scoped>
